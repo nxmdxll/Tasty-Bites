@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: 'Lora',serif; /* Modern and clean font */
+    background: linear-gradient(to right, #ffffff, #f7f7f7); /* Light, elegant gradient */
+    text-align: center;
+    margin: 0;
+    color: #333; /* Darker for better contrast */
+}
+
+/* Header */
+header {
+    text-align: left; /* Aligns text to the left corner */
+    padding: 20px;
+    background: transparent;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Adjust title placement */
+header h1 {
+    font-size: 46px;
+	font-weight: bold;
+    margin-left: 20px; /* Moves it towards the corner */
+}
+
+/* Small phrase below title */
+header p {
+    font-size: 16px;
+    color: #666;
+    margin-left: 20px;
+    margin-top: -10px; /* Reduces gap */
+    font-style: italic;
+}
+
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #ff6b6b;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a.active {
+    background: rgba(255, 255, 255, 0.3); /* Subtle highlight */
+    color: black; /* Gold accent for elegance */
+    border-radius: 6px;
+}
+/* Dropdown Styles */
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ff6b6b;
+    list-style: none;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+}
+
+nav ul .dropdown li {
+    padding: 12px;
+}
+
+nav ul .dropdown li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+/* Make all images consistent */
+
+.hero img {
+    width: 100%;
+    max-width: 550px; /* Slightly larger */
+    height: 380px; /* Adjusted height */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recipe-card img {
+    width: 100%;
+    max-width: 275px; /* Slightly larger */
+    height: 175px; /* Adjusted height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Recipe Rows */
+.recipe-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Option Cards */
+.option-card {
+    width: 300px; /* Ensures consistent size */
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.option-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Row Styling */
+.recipe-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    width: 300px;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #ff6b6b, #ff4757);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    width: 100%;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+

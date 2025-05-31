@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tasty Bites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+<!-- Navigation Bar -->
+    <nav>
+        <ul>
+         <li><a href="index.html" >Home</a></li>
+            <li><a href="products.html">Products</a>
+                <ul class="dropdown">
+                    <li><a href="Breakfast.html">Breakfast</a></li> <!-- 🔹 Active Page -->
+                    <li><a href="Lunch.html">Lunch</a></li>
+                    <li><a href="Dinner.html">Dinner</a></li>
+                    <li><a href="Dessert.html">Dessert</a></li>
+					<li><a href="Beverages.html">Beverages</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html"class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Contact Form -->
+    <section class="contact-content">
+        <h2>Get in Touch</h2>
+        <p>Have a question, suggestion, or just want to say hello? Fill out the form below!</p>
+
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <h3>Other Ways to Reach Us</h3>
+        <p>📩 Email: <strong>support@tastybites.com</strong></p>
+        <p>📞 Phone: <strong>+91 77777 11110</strong></p>
+        <p>📍 Address: <strong>Bengaluru, India</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tasty Bites | All rights reserved</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+
+</body>
+</html>
